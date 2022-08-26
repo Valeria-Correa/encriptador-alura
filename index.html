@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+</head>
+
+<body>
+    <header><img class="logo" src="imágenes-encriptador/logo.png" alt="logo alura"></header>
+    
+    <div class="encriptador">
+        <div class="contenedor_encriptador">
+            <textarea class="caja_encriptador" name="" id="entrada" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="botones_encriptador">
+                <p>
+                    <i class="fa-solid fa-circle-exclamation" style="color: #0A3871;"></i>
+                    Solo letras minúsculas y sin acentos
+                </p>
+                
+                <button class="boton_encriptar" id="boton_encriptar" onclick="boton_encriptar()">Encriptar</button>
+                <button class="boton_desencriptar" onclick="boton_desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    
+        <div class="contenedor_desencriptador">
+            <div class="contenido_desencriptador">
+                <div class="contenido_inicial">
+                    <img src="imágenes-encriptador/pusheen-sherlock.gif" alt="" class="kittenImg">
+                    <p class="titulo"><b>Ningún mensaje encontrado</b></p>
+                    <p class="subtitulo">El resultado se mostrará aquí</p>
+                </div>
+    
+                <div class="contenido_no_encontrado">
+                    <img src="imágenes-encriptador/pusheen-huh.gif" alt="" class="no_encontrado">
+                    <p class="titulo"><b>Ningún mensaje fue encontrado</b></p>
+                    <p class="subtitulo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+    
+                <div class="contenido_encontrado">
+                    <textarea readonly name="" id="" cols="30" rows="10" class="caja_desencriptador"></textarea>
+                    <button onclick="copiar()" class="boton_copiar">Copiar</button>
+                </div>
+                <div class="copiado">
+                    <p><i class="fa-solid fa-circle-check"></i>¡Texto copiado con éxito!</p>
+                </div>
+            </div>
+
+            <footer>
+                <p class="copy">&copy 2022 - Desarrollado por <span class="nombre"><b>Valeria G. Correa</b></span></p>
+                <div class="redes">
+                    <a href="https://github.com/Valeria-Correa" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+        
+                    <a href="https://www.linkedin.com/in/valeria-correa--/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
